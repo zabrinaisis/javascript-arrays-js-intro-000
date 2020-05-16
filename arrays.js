@@ -1,7 +1,10 @@
 var chocolateBars = ['snickers', 'hundred grand', 'kitkat', 'skittles'];
 
+var array = [];
+var element = "";
+
 function addElementToBeginningOfArray(array, element) {
-  newArray = [element, ...array]
+  var newArray = [element, ...array]
   return (newArray)
 }
 
@@ -11,7 +14,7 @@ function destructivelyAddElementToBeginningOfArray(array, element) {
 }
 
 function addElementToEndOfArray(array, element) {
-  newArray = [...array, element]
+  var newArray = [...array, element]
   return (newArray)
 }
 
@@ -30,7 +33,7 @@ funtion destructivelyRemoveElementFromBeginningOfArray(array) {
 }
 
 function removeElementFromBeginningOfArray(array) {
-  newArray = array.slice(1)
+  var newArray = array.slice(1)
   return (newArray)
 }
 
@@ -40,6 +43,6 @@ function destructivelyRemoveElementFromEndOfArray(array) {
 }
 
 function removeElementFromEndOfArray(array) {
-  newArray = array.slice(0, array.length - 1)
+  var newArray = array.slice(0, array.length - 1)
   return (newArray)
 }
